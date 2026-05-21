@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Live Web App</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        /* Main Container Card */
+        .card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #2563eb;
+            margin-top: 0;
+        }
+
+        p {
+            color: #4b5563;
+            line-height: 1.5;
+        }
+
+        /* Interactive Button */
+        .btn {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Welcome to My App</h1>
+        <p>Your project is now successfully running on Vercel using the clean "Other" preset layout!</p>
+        <button class="btn" onclick="celebrate()">Click Me</button>
+    </div>
+
+    <script>
+        // Interactive Logic
+        function celebrate() {
+            alert("🎉 Awesome! Your interactive website logic is working beautifully!");
+        }
+    </script>
+
+</body>
+</html>
